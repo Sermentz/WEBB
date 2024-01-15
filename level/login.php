@@ -2,6 +2,15 @@
 require 'func.php';
 
 
+if (isset($_SESSION['log'], $_SESSION['role'])) {
+    header('location:./' . strtolower($_SESSION['role']) . '/index.php');
+}
+
+// if (isset($_SESSION['log'])) {
+//    http_response_code(404);
+//    die();
+// }
+
 if (isset($_POST['login'])) {
     $email = $_POST['email'];
     $pass = $_POST['password'];
@@ -44,14 +53,6 @@ if (isset($_POST['login'])) {
             header("location:pemasok/index.php");
         }
     } else {
-        http_response_code(404);
-        die();
-    }
-
-    if (isset($_SESSION['log'], $_SESSION['role'])) {
-        header('location:admin/index.php');
-    }
-    if (isset($_SESSION['log'])) {
         http_response_code(404);
         die();
     }
