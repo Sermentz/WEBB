@@ -253,7 +253,7 @@ if (isset($_SESSION["role"])) {
 
                 </div>
                 <div class="">
-                    <button data-modal-target="tambahmodal" data-modal-toggle="tambahmodal" class="bg-blue-600 hover:bg-blue-300 text-white font-semibold hover:text-blue-800 py-2 px-4 mr-2 border border-blue-600 hover:border-transparent rounded " type="button">Tambah</button>
+                    <!-- <button data-modal-target="tambahmodal" data-modal-toggle="tambahmodal" class="bg-blue-600 hover:bg-blue-300 text-white font-semibold hover:text-blue-800 py-2 px-4 mr-2 border border-blue-600 hover:border-transparent rounded " type="button">Tambah</button> -->
                     <a class="bg-blue-600 hover:bg-blue-300 text-white font-semibold hover:text-blue-800 py-2 px-4 mr-2 border border-blue-600 hover:border-transparent rounded " href="../printstok.php" target="_blank">Print</a>
 
                 </div>

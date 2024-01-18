@@ -112,7 +112,7 @@ if (isset($_POST['login'])) {
 <body class="">
     <div class="w-full min-h-screen bg-gray-50 flex flex-col sm:justify-center items-center pt-6 sm:pt-0">
         <div class="sm:mx-auto sm:w-full sm:max-w-sm">
-            <img class="mx-auto h-50 w-auto" src="robots.jpg">
+            <img class="mx-auto h-50 w-auto" src="akarobe.jpg">
             <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Sign in to your account</h2>
         </div>
 

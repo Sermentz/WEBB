@@ -181,7 +181,7 @@ if (isset($_SESSION["role"])) {
                             <tr>
                                 <th data-priority="1">E-Mail</th>
                                 <th data-priority="3" class="max-w-[85px]">Role</th>
-                                <th data-priority="5" class="max-w-[100px]">Aksi</th>
+                                <!-- <th data-priority="5" class="max-w-[100px]">Aksi</th> -->
                             </tr>
                         </thead>
                         <tbody>
@@ -195,10 +195,10 @@ if (isset($_SESSION["role"])) {
                                 <tr>
                                     <td class="text-center"><?= $email ?></td>
                                     <td class="text-center"><?= $role ?></td>
-                                    <td class="text-center">
+                                    <!-- <td class="text-center">
                                         <button class="bg-blue-600 hover:bg-blue-300 text-white font-semibold hover:text-blue-800 py-2 px-4 mr-2 border border-blue-600 hover:border-transparent rounded ">Edit</button>
                                         <button class="bg-red-600 hover:bg-red-300 text-white font-semibold hover:text-red-800 py-2 px-4 mr-2 border border-red-600 hover:border-transparent rounded ">Hapus</button>
-                                    </td>
+                                    </td> -->
                                 </tr>
                             <?php
                             };
