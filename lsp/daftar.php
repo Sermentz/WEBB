@@ -143,16 +143,28 @@ require 'func.php';
         // Nilai default dari select pertama x
         ipkinput.value = ipkData[semesterselect.value];
 
+        document.addEventListener('DOMContentLoaded', () => {
+            const selectElement = document.getElementById('idSelectElement');
+            const buttonElement = document.getElementById('ajukan');
+            const textInputElement = document.getElementById('pilihanbeasiswa');
+            const fileInputElement = document.getElementById('file');
 
-        // const btnajukan = document.getElementById('ajukan');
+            // Function to check the select value and toggle element states
+            function checkSelectValue() {
+                const selectedValue = parseInt(selectElement.value, 10);
+                const isDisabled = selectedValue < 3;
 
-        // ipkinput.addEventListener("keyup", () => {
-        //     if (ipkinput.value.length = 3) {
-        //         btnajukan.disabled = false;
-        //     } else {
-        //         btnajukan.disabled = true;
-        //     }
-        // })
+                buttonElement.disabled = isDisabled;
+                textInputElement.disabled = isDisabled;
+                fileInputElement.disabled = isDisabled;
+            }
+
+            // Attach event listener to the select element
+            selectElement.addEventListener('change', checkSelectValue);
+
+            // Initial check on page load
+            checkSelectValue();
+        });
     </script>
 </body>
 
